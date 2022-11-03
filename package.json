@@ -60,6 +60,7 @@
   },
   "dependencies": {
     "express": "^4.17.2",
+    "gsap": "^3.11.3",
     "react-parallax-tilt": "^1.7.68"
   },
   "prettier": {
