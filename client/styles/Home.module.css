@@ -1,0 +1,27 @@
+.fortune_room {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: red;
+  background-image: url('../../server/public/fortune-background.jpeg');
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.teller {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  height: fit-content;
+  background: #180815;
+  padding: 2rem;
+}
+
+.teller img {
+  max-width: 500px;
+  max-height: 65vh;
+}
