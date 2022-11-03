@@ -1,5 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
+import FortuneCookie from './FortuneCookie'
 
 import Home from './Home'
 import Card from './Card'
@@ -9,7 +10,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Cards" element={<Card />} />
+        <Route path="/fortune-cookie" element={<FortuneCookie />} />
       </Routes>
     </>
   )
