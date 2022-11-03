@@ -17,6 +17,7 @@
   transform: translate(-50%, -50%);
   width: fit-content;
   height: fit-content;
+  max-width: 70vh;
   background: #180815;
   padding: 2rem;
 }
@@ -24,4 +25,31 @@
 .teller img {
   max-width: 500px;
   max-height: 65vh;
+  scale: 0.8;
+  transform-origin: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  color: white;
+  width: 100vw;
+  height: 15vh;
+  background: #180815;
+  text-align: center;
+}
+
+.canvas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 15vh;
+  background-color: #180815;
 }
