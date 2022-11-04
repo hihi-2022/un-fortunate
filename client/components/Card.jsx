@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import ReactCardFlip from 'react-card-flip'
 import Tilt from 'react-parallax-tilt'
 import style from '../styles/Card.module.css'
@@ -17,8 +17,11 @@ function Card() {
 
   const [isFlipped, setIsFlipped] = useState({
     card1: false,
+    val1: randomizerer(),
     card2: false,
+    val2: randomizerer(),
     card3: false,
+    val3: randomizerer(),
   })
 
   const handleClick = (e) => {
@@ -35,7 +38,7 @@ function Card() {
           <button onClick={handleClick}>
             <div className={style.tarot_1}>
               <Tilt>
-                <img id="card1" src={randomizerer()[0]} alt="fortune teller" />
+                <img id="card1" src={isFlipped.val1[0]} alt="fortune teller" />
               </Tilt>
             </div>
           </button>
@@ -47,7 +50,7 @@ function Card() {
                   src="/images/tarot-cards/Plain_card.png"
                   alt="your fortune"
                 />
-                <p className={style.tarot_text}>{randomizerer()[1]}</p>
+                <p className={style.tarot_text}>{isFlipped.val1[1]}</p>
               </Tilt>
             </div>
           </button>
@@ -56,7 +59,7 @@ function Card() {
           <button onClick={handleClick}>
             <div className={style.tarot_1}>
               <Tilt>
-                <img id="card2" src={randomizerer()[0]} alt="fortune teller" />
+                <img id="card2" src={isFlipped.val2[0]} alt="fortune teller" />
               </Tilt>
             </div>
           </button>
@@ -68,7 +71,7 @@ function Card() {
                   src="/images/tarot-cards/Plain_card.png"
                   alt="your fortune"
                 />
-                <p className={style.tarot_text}>{randomizerer()[1]}</p>
+                <p className={style.tarot_text}>{isFlipped.val2[1]}</p>
               </Tilt>
             </div>
           </button>
@@ -77,7 +80,7 @@ function Card() {
           <button onClick={handleClick}>
             <div className={style.tarot_1}>
               <Tilt>
-                <img id="card3" src={randomizerer()[0]} alt="fortune teller" />
+                <img id="card3" src={isFlipped.val3[0]} alt="fortune teller" />
               </Tilt>
             </div>
           </button>
@@ -89,7 +92,7 @@ function Card() {
                   src="/images/tarot-cards/Plain_card.png"
                   alt="your fortune"
                 />
-                <p className={style.tarot_text}>{randomizerer()[1]}</p>
+                <p className={style.tarot_text}>{isFlipped.val3[1]}</p>
               </Tilt>
             </div>
           </button>
