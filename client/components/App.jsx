@@ -12,6 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/fortune-cookie" element={<FortuneCookie />} />
         <Route path="/Card" element={<Card />} />
+        <Route path="/8Ball" element={<Ball />} />
       </Routes>
     </>
   )

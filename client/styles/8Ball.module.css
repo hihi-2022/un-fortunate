@@ -32,14 +32,6 @@
 .questionbox{
   display: flex;
   justify-content: center;
-  
-  
-}
-
-.questionres{
-  text-align: center;
-  
-  
 }
 
 textarea {
@@ -74,15 +66,10 @@ textarea {
 }
 
 .onTop{
-  position:absolute;
   color: white;
-  left: 43%;
-  top: 57.5%;
-  inline-size: 250px;
-  overflow-wrap: break-word;
+  text-align: center;
   font-size: 26px;
   font-style: italic;
-  
-  
+  background-color: purple;
 }
 
