@@ -10,20 +10,27 @@ function Card() {
   const randomImg = '/images/tarot-cards/' + cards[randomizer].image
   const randomText = cards[randomizer].text
 
-  const [isFlipped, setIsFlipped] = useState(false)
+  const [isFlipped, setIsFlipped] = useState({
+    card1: false,
+    card2: false,
+    card3: false,
+  })
 
-  const handleClick = () => {
-    setIsFlipped(!isFlipped)
+  const handleClick = (e) => {
+    const targetID = e.target.id
+    setIsFlipped((prevState) => {
+      return { ...prevState, [targetID]: !prevState[targetID] }
+    })
   }
 
   return (
     <div className={style.fortune_room}>
       <div className={style.tarot_cards}>
-        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={isFlipped.card1} flipDirection="horizontal">
           <button onClick={handleClick}>
             <div className={style.tarot_1}>
               <Tilt>
-                <img src={randomImg} alt="fortune teller" />
+                <img id="card1" src={randomImg} alt="fortune teller" />
               </Tilt>
             </div>
           </button>
@@ -40,40 +47,48 @@ function Card() {
             </div>
           </button>
         </ReactCardFlip>
-        {/* <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
-        <button onClick={handleClick}>
-          <div className={style.tarot_1}>
-            <Tilt>
-              <img src="/fortune-teller.jpeg" alt="fortune teller" />
-            </Tilt>
-          </div>
-        </button>
+        <ReactCardFlip isFlipped={isFlipped.card2} flipDirection="horizontal">
+          <button onClick={handleClick}>
+            <div className={style.tarot_1}>
+              <Tilt>
+                <img
+                  id="card2"
+                  src="/fortune-teller.jpeg"
+                  alt="fortune teller"
+                />
+              </Tilt>
+            </div>
+          </button>
 
-        <button>
-          <div className={style.tarot_1}>
-            <Tilt>
-              <img src="/images/tarot-cards/Libra.png" alt="your fortune" />
-            </Tilt>
-          </div>
-        </button>
-      </ReactCardFlip>
-      <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
-        <button onClick={handleClick}>
-          <div className={style.tarot_1}>
-            <Tilt>
-              <img src="/fortune-teller.jpeg" alt="fortune teller" />
-            </Tilt>
-          </div>
-        </button>
+          <button>
+            <div className={style.tarot_1}>
+              <Tilt>
+                <img src="/images/tarot-cards/Libra.png" alt="your fortune" />
+              </Tilt>
+            </div>
+          </button>
+        </ReactCardFlip>
+        <ReactCardFlip isFlipped={isFlipped.card3} flipDirection="horizontal">
+          <button onClick={handleClick}>
+            <div className={style.tarot_1}>
+              <Tilt>
+                <img
+                  id="card3"
+                  src="/fortune-teller.jpeg"
+                  alt="fortune teller"
+                />
+              </Tilt>
+            </div>
+          </button>
 
-        <button>
-          <div className={style.tarot_1}>
-            <Tilt>
-              <img src="/images/tarot-cards/Libra.png" alt="your fortune" />
-            </Tilt>
-          </div>
-        </button>
-      </ReactCardFlip> */}
+          <button>
+            <div className={style.tarot_1}>
+              <Tilt>
+                <img src="/images/tarot-cards/Libra.png" alt="your fortune" />
+              </Tilt>
+            </div>
+          </button>
+        </ReactCardFlip>
       </div>
     </div>
   )
