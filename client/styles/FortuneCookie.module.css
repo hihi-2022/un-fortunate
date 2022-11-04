@@ -16,14 +16,21 @@
 
 .fortuneHeading {
   color: #EC2124;
-  font-size: 90px;
+  font-size: 75px;
   font-family: 'Archivo', sans-serif; 
   font-weight: 900;
   padding-top: 125px;
 }
 
+.fortuneHeading2 {
+  color: #EC2124;
+  font-size: 75px;
+  font-family: 'Noto', serif; 
+  font-weight: 900;
+}
+
 .fortuneCookie {
-  padding: 50px;
+  padding: 0px;
 }
 
 img {

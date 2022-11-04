@@ -48,6 +48,7 @@ function FortuneCookie() {
   return (
     <div ref={el} className={style.fortuneBackground}>
       <h1 className={style.fortuneHeading}>Fortune Cookie</h1>
+      <h2 className={style.fortuneHeading2}> おみくじ入りクッキ</h2>
       <div ref={cookie} className={style.fortuneCookie} onClick={onClick}>
         <img src="/images/fortune-cookie/1fortune.png" alt="fortune cookie" />
         <FortuneMessage fortune={fortune} />
