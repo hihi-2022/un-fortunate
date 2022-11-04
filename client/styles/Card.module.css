@@ -1,10 +1,23 @@
-.tarot_cards {
+.fortune_room {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: red;
+  background-image: url('../../server/public/fortune-background.jpeg');
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.tarot_cards {
   margin-top: 5rem;
   background-color: red;
   border-radius: 50px;
-  padding: 75px;
+  max-width: 500px;
 }
 
 .tarot_1 {
@@ -16,4 +29,21 @@
 .tarot_1 img {
   max-width: 65vw;
   max-height: 65vh;
+  border-radius: 40px;
+}
+
+.tarot_text {
+  color: black;
+  position: absolute;
+  top: 45%;
+  left: 8%;
+  width: 85%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
 }
