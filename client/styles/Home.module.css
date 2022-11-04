@@ -45,11 +45,23 @@
   text-align: center;
 }
 
-.canvas {
+.options {
   position: absolute;
   bottom: 0;
   left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  
   width: 100vw;
   height: 15vh;
   background-color: #180815;
+}
+
+.options img {
+  --size: 80px;
+  width: var(--size);
+  height: var(--size);
 }
