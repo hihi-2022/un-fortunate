@@ -33,4 +33,33 @@ export default [
     id: 8,
     message: 'Fortune cookie says: you are a loser.',
   },
+  {
+    id: 9,
+    message: "Look how far you've come!",
+  },
+  {
+    id: 10,
+    message: 'You are a goddess...',
+  },
+  {
+    id: 11,
+    message:
+      "Life is not about waiting for the storm to pass. It's about learning to dance in the rain.",
+  },
+  {
+    id: 12,
+    message: 'Live. Laugh. Love.',
+  },
+  {
+    id: 13,
+    message: "One bad chapter doesn't mean your story is over.",
+  },
+  {
+    id: 14,
+    message: "You are not what you've done. You are what you keep doing.",
+  },
+  {
+    id: 15,
+    message: 'Not all of those who wonder are lost.',
+  },
 ]
