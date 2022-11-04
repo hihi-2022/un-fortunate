@@ -1,0 +1,88 @@
+.landingball, .ball {
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 100%;
+  box-shadow: 5px 5px;
+  
+}
+
+.landingball{
+  position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 10%;
+  opacity: 1;
+}
+
+.bg{
+  background-color: peachpuff;
+  background-image: url('https://cdnb.artstation.com/p/assets/images/images/050/141/955/large/beata-kurkul-magicroom-2.jpg?1654150031');
+  background-size:100% 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.questionbox{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.questionres{
+  text-align: center;
+  
+  
+}
+
+textarea {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid purple;
+  border-radius: 44px;
+  background-color: #000000;
+  color: white;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  border-bottom: 2px solid purple;
+  color: white;
+  padding: 33px;
+  margin: 8px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  max-height: 105px;
+  border-radius: 44px;
+}
+
+.speech{
+  max-width: 444px;
+}
+
+.onTop{
+  position:absolute;
+  color: white;
+  left: 43%;
+  top: 57.5%;
+  inline-size: 250px;
+  overflow-wrap: break-word;
+  font-size: 26px;
+  font-style: italic;
+  
+  
+}
+
