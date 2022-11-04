@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import FortuneCookie from './FortuneCookie'
-
+import Ball from './8Ball'
 import Home from './Home'
 import Card from './Card'
 
