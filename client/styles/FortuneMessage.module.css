@@ -1,0 +1,13 @@
+.message-container {
+  text-align: center;
+}
+
+.message {
+  background-color: white;
+  font-size: 40px;
+  font-family: monospace;
+  max-width: 600px;
+  height: auto;
+  margin: auto;
+}
+
