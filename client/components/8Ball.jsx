@@ -1,28 +1,32 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Tilt from 'react-parallax-tilt'
 import style from '../styles/8Ball.module.css'
 import response from '../../server/public/data/8Ball.js'
 
 
 
+
  
 
-  export default function Ball() {
-    const rn9 = Math.floor(Math.random() * 10)
-    const [textRes, setButtonText] = useState('What puzzles you today?');
-    console.log(rn9)
+export default function Ball() {
+  const rn9 = Math.floor(Math.random() * 10)
+  const [textRes, setButtonText] = useState('What puzzles you today?');
+  console.log(rn9)
+  
+  const textarea = document.getElementById('message')
 
-    const textarea = document.getElementById('message')
+
 
   function handleClick() {
     if(response[rn9].response === textRes){
       setButtonText('Who... asked?')
       textarea.value = ''
+      
     }
     else{
     setButtonText(response[rn9].response);
     textarea.value = ''
+    
     }
 
   }
@@ -38,9 +42,7 @@ import response from '../../server/public/data/8Ball.js'
     </div>
 
     <div className={style.questionres}>
-      <img className={style.speech} src='/images/speech.png' alt='black speech bubble'>
 
-      </img>
       <p className={style.onTop}>{textRes}</p>
     </div>
     
