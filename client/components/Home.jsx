@@ -61,10 +61,10 @@ function Home() {
         </Tilt>
       </div>
       <div ref={table} className={style.options}>
-        <Link to="/">
+        <Link to="/8ball">
           <img src="/images/icons/8ball.png" alt="8 ball" />
         </Link>
-        <Link to="/fortune-cookie">
+        <Link to="/card">
           <img src="/images/icons/tarots.png" alt="tarot card" />
         </Link>
         <Link to="/fortune-cookie">
