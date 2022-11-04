@@ -1,4 +1,5 @@
 import React, { useRef, useLayoutEffect } from 'react'
+import { Link } from 'react-router-dom'
 // eslint-disable-next-line import/no-named-as-default
 import gsap from 'gsap'
 import Tilt from 'react-parallax-tilt'
@@ -59,7 +60,17 @@ function Home() {
           <img src="/fortune-teller.jpeg" alt="fortune teller" />
         </Tilt>
       </div>
-      <canvas ref={table} className={style.canvas}></canvas>
+      <div ref={table} className={style.options}>
+        <Link to="/">
+          <img src="/images/icons/8ball.png" alt="8 ball" />
+        </Link>
+        <Link to="/fortune-cookie">
+          <img src="/images/icons/tarots.png" alt="tarot card" />
+        </Link>
+        <Link to="/fortune-cookie">
+          <img src="/images/icons/cookie.png" alt="fortune cookie" />
+        </Link>
+      </div>
     </div>
   )
 }
