@@ -6,9 +6,14 @@ import cards from '../../server/public/data/Cards.js'
 
 function Card() {
   // Ramdomiser
-  const randomizer = Math.floor(Math.random() * 11)
-  const randomImg = '/images/tarot-cards/' + cards[randomizer].image
-  const randomText = cards[randomizer].text
+  function randomizerer() {
+    const randomizer = Math.floor(Math.random() * 11)
+    const randomImg = '/images/tarot-cards/' + cards[randomizer].image
+    const randomText = cards[randomizer].text
+    const randomItems = []
+    randomItems.push(randomImg, randomText)
+    return randomItems
+  }
 
   const [isFlipped, setIsFlipped] = useState({
     card1: false,
@@ -30,7 +35,7 @@ function Card() {
           <button onClick={handleClick}>
             <div className={style.tarot_1}>
               <Tilt>
-                <img id="card1" src={randomImg} alt="fortune teller" />
+                <img id="card1" src={randomizerer()[0]} alt="fortune teller" />
               </Tilt>
             </div>
           </button>
@@ -42,7 +47,7 @@ function Card() {
                   src="/images/tarot-cards/Plain_card.png"
                   alt="your fortune"
                 />
-                <p className={style.tarot_text}>{randomText}</p>
+                <p className={style.tarot_text}>{randomizerer()[1]}</p>
               </Tilt>
             </div>
           </button>
@@ -51,11 +56,7 @@ function Card() {
           <button onClick={handleClick}>
             <div className={style.tarot_1}>
               <Tilt>
-                <img
-                  id="card2"
-                  src="/fortune-teller.jpeg"
-                  alt="fortune teller"
-                />
+                <img id="card2" src={randomizerer()[0]} alt="fortune teller" />
               </Tilt>
             </div>
           </button>
@@ -63,7 +64,11 @@ function Card() {
           <button>
             <div className={style.tarot_1}>
               <Tilt>
-                <img src="/images/tarot-cards/Libra.png" alt="your fortune" />
+                <img
+                  src="/images/tarot-cards/Plain_card.png"
+                  alt="your fortune"
+                />
+                <p className={style.tarot_text}>{randomizerer()[1]}</p>
               </Tilt>
             </div>
           </button>
@@ -72,11 +77,7 @@ function Card() {
           <button onClick={handleClick}>
             <div className={style.tarot_1}>
               <Tilt>
-                <img
-                  id="card3"
-                  src="/fortune-teller.jpeg"
-                  alt="fortune teller"
-                />
+                <img id="card3" src={randomizerer()[0]} alt="fortune teller" />
               </Tilt>
             </div>
           </button>
@@ -84,7 +85,11 @@ function Card() {
           <button>
             <div className={style.tarot_1}>
               <Tilt>
-                <img src="/images/tarot-cards/Libra.png" alt="your fortune" />
+                <img
+                  src="/images/tarot-cards/Plain_card.png"
+                  alt="your fortune"
+                />
+                <p className={style.tarot_text}>{randomizerer()[1]}</p>
               </Tilt>
             </div>
           </button>

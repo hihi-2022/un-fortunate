@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    message: 'H will come into your life and cause severe financial pressure.',
+    message: 'You have a face for radio.',
   },
   {
     id: 2,

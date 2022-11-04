@@ -1,23 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Mono:wght@300;400;500&family=Noto+Serif+JP:wght@500&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .fortuneBackground {
   background-color: aqua;
   background-image: url('../../server/public/images/misc/greatwave.jpg');
   height: 100vh;
+  width: 100vw;
   text-align: center;
 }
 
 .fortuneHeading {
   color: #EC2124;
-  font-size: 90px;
+  font-size: 75px;
   font-family: 'Archivo', sans-serif; 
   font-weight: 900;
-  padding-top: 160px;
+  padding-top: 125px;
+}
+
+.fortuneHeading2 {
+  color: #EC2124;
+  font-size: 75px;
+  font-family: 'Noto', serif; 
+  font-weight: 900;
 }
 
 .fortuneCookie {
-  padding: 100px;
-  margin: auto;
+  padding: 0px;
 }
 
 img {

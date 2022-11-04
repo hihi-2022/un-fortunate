@@ -11,8 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/fortune-cookie" element={<FortuneCookie />} />
-        <Route path="/Card" element={<Card />} />
-        <Route path="/8Ball" element={<Ball />} />
+        <Route path="/card" element={<Card />} />
+        <Route path="/8ball" element={<Ball />} />
       </Routes>
     </>
   )
